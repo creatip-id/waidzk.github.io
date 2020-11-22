@@ -198,6 +198,10 @@ main {
   .creations .isi .link {
     margin: 20px 0px 0px 0px;
   }
+
+  .sosmed p {
+    font-size: 16px;
+  }
 }
 
 @keyframes fadeEffect {
