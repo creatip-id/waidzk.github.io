@@ -97,10 +97,8 @@ main {
   margin-top: 90px;
 }
 
-.creations .isi{
+.creations .isi {
   display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .creations .link{
@@ -144,6 +142,7 @@ main {
 .contact .isi{
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .contact .link {
@@ -180,6 +179,25 @@ main {
 
 .sosmed p {
   font-size: 13px;
+}
+
+@media screen and (max-width:360px) {
+  .profile .isi p {
+    width: 200px;
+  }
+
+  .creations {
+    margin-top: 10px;
+  }
+
+  .creations .isi {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .creations .isi .link {
+    margin: 20px 0px 0px 0px;
+  }
 }
 
 @keyframes fadeEffect {
