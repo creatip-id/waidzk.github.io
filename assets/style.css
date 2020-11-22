@@ -182,6 +182,22 @@ main {
 }
 
 @media screen and (max-width:360px) {
+  .photo-profile img{
+    width: 100px;
+  }
+
+  .name {
+    font-size: 14px;
+  }
+
+  .profesi,
+  .listNav a,
+  .profile .isi p,
+  .creations .isi a,
+  .sosmed p {
+    font-size: 12px;
+  }
+
   .profile .isi p {
     width: 200px;
   }
@@ -197,10 +213,6 @@ main {
 
   .creations .isi .link {
     margin: 20px 0px 0px 0px;
-  }
-
-  .sosmed p {
-    font-size: 16px;
   }
 }
 
