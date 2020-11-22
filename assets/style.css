@@ -1,0 +1,194 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  font-family: 'Nunito', sans-serif;
+}
+
+.photo-profile img {
+  border-radius: 50%;
+  width: 150px;
+}
+
+.name {
+  font-size: 20px;
+}
+
+.profesi {
+  display: flex;
+  flex-direction: column;
+  color: #4A4A4A;
+}
+
+/* navigation */
+div.container {
+  margin-top: 20px;
+	text-align: center;
+}
+
+div.container a {
+    color: #ADADAD;
+    text-decoration: none;
+    font: 12px;
+    margin: 0px 10px;
+    position: relative;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+div.borderXwidth a:after
+{
+    position: absolute;
+    opacity: 0;
+    width: 0%;
+    height: 1px;
+    content: '';
+    background: #50008F;
+    transition: all 0.3s;
+}
+
+div.borderXwidth a:after
+{
+    left: 0px;
+    bottom: 0px;
+}
+
+div.borderXwidth a:hover:after
+{
+    opacity: 1;
+    width: 60%;
+}
+
+div.borderXwidth a.active:after
+{
+    opacity: 1;
+    width: 100%;
+}
+
+div.container a.active{
+  color: #50008F;
+}
+
+div.container a:hover {
+  color: #50008F;
+}
+
+/* main */
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Nunito', sans-serif;
+}
+
+.profile .isi p{
+  text-align: justify;
+  width: 400px;
+}
+
+.creations {
+  margin-top: 90px;
+}
+
+.creations .isi{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.creations .link{
+  margin-right: 50px;
+  font-size: 17px;
+  color: #000;
+  text-decoration: none;
+  font: 12px;
+  position: relative;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.creations .link:after {
+  position: absolute;
+  opacity: 1;
+  width: 30%;
+  height: 1px;
+  content: '';
+  background: #50008F;
+  transition: all 0.3s;
+}
+
+.tabcontent {
+  display : none;
+  min-height: 180px;
+}
+
+.tabcontent.active {
+  display: block;
+  transition: all 1s ease;
+}
+
+.tabcontent p,
+.tabcontent a,
+.tabcontent img {
+  transition: all 1s ease;
+  animation: fadeEffect 0.6s ease;
+}
+
+.contact .isi{
+  display: flex;
+  flex-direction: column;
+}
+
+.contact .link {
+  margin-right: 50px;
+  font-size: 17px;
+  color: #000;
+  text-decoration: none;
+  font: 12px;
+  position: relative;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.contact .link:after {
+  position: absolute;
+  opacity: 1;
+  width: 30%;
+  height: 1px;
+  content: '';
+  background: #50008F;
+  transition: all 0.3s;
+}
+
+.sosmed {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.ikonsosmed {
+  margin-right: 10px;
+  width: 20px;
+}
+
+.sosmed p {
+  font-size: 13px;
+}
+
+@keyframes fadeEffect {
+  from {
+    opacity: 0;
+    margin-left: 30px;
+  }
+  to {
+    opacity: 1;
+    margin-left: 0px;
+  }
+}
